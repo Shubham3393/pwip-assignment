@@ -1,0 +1,57 @@
+.table{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5rem 0.5rem 2rem 1rem rgba(163, 162, 162, 0.253);
+
+    .row{
+        display: flex;
+        background-color: white;
+        border-bottom: 1px var(--blue-border) solid;
+        padding: 0.7rem;
+
+        .head{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            &:not(:last-child){
+                margin-right: 6rem;
+                @media(max-width:1500px){
+                    margin-right: 2rem;
+                }
+                @media(max-width:1200px){
+                    margin-right: 0.5rem;
+                }
+            }
+
+            .header{
+                margin-right: 1rem;
+                font-size: 1.7rem;
+                font-weight: bold;
+                @media(max-width:1200px){
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .data{
+            padding: 0.5rem;
+            flex: 1;
+            font-size: 1.3rem;
+            
+            &:not(:last-child){
+                margin-right: 6rem;
+                @media(max-width:1500px){
+                    margin-right: 2rem;
+                }
+                @media(max-width:1200px){
+                    margin-right: 0.5rem;
+                }
+                @media(max-width:800px){
+                    overflow: scroll;
+                }
+            }
+
+        }
+    }
+}

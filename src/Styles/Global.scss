@@ -1,0 +1,39 @@
+:root{
+    --bg-blue: #c3d3f1;
+    --dark-blue: rgb(5, 91, 148);
+    --dark: #2f3941;
+    --grey-border : rgb(145, 141, 141);
+    --blue-border : rgba(109, 177, 240, 0.562);
+    
+}
+
+html{
+    font-size: 62.5%;
+
+    @media (max-width : 1500px){
+        font-size: 60%;
+    }
+
+    @media (max-width : 1200px){
+        font-size: 55%;
+    }
+    @media (max-width : 800px){
+        font-size: 45%;
+    }
+}
+
+body{
+    
+    padding: 4rem;
+    @media(min-width : 2000px){
+        padding: 10rem;
+    }
+    @media(max-width:1500px){
+        padding: 1.5rem;
+    }
+    @media(max-width:800px){
+        padding: 0rem;
+    }
+}
+
+
